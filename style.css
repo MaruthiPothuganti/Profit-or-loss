@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    background-color: bl;
+}
+
+header {
+    background-color: black;
+    height: 4rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h3 {
+    color: red;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 25px;
+}
+
+.container {
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 200px;
+    border: solid px;
+    text-align: center;
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    height: 25px;
+    border-radius: 3px;
+}
+
+button {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+#outputMessage {
+    float: right;
+}
+
+#output {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding-left: 35%;
+    padding-right: 35%;
+    background-color: black;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.links {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}

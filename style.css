@@ -18,7 +18,6 @@ h3 {
 }
 
 .container {
-    float: left;
     text-align: center;
     margin-top: 10%;
     margin-left: 10%;
@@ -47,13 +46,24 @@ button {
 }
 
 #outputMessage {
-    float: right;
+    display: inline;
 }
 
 #output {
     text-align: center;
-    margin-top: 10%;
-    padding: 10%;
+}
+
+#loading,
+#profit,
+#loss {
+    height: 100px;
+    display: none;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#loading {
+    padding-left: 100px;
 }
 
 footer {

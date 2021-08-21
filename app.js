@@ -26,7 +26,7 @@ btnCalculate.addEventListener("click", function calculate() {
 
     if (Number(currentStockPrice.value) > Number(initialStockPrice.value)) {
         var loss = currentCost - initialCost;
-        var lossPer = (loss / initialCost) * 100;
+        var lossPer = ((loss / initialCost) * 100).toFixed(2);
         document.getElementById('loading').style.display = "block";
         setTimeout(function() {
             document.getElementById('loading').style.display = "none";
@@ -37,7 +37,7 @@ btnCalculate.addEventListener("click", function calculate() {
 
     } else if (Number(initialStockPrice.value) > Number(currentStockPrice.value)) {
         var profit = initialCost - currentCost;
-        var profitPer = (profit / initialCost) * 100;
+        var profitPer = ((profit / initialCost) * 100).toFixed(2);
         document.getElementById('loading').style.display = "block";
         setTimeout(function() {
             document.getElementById('loading').style.display = "none";

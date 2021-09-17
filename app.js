@@ -50,8 +50,8 @@ btnCalculate.addEventListener("click", function calculate() {
 
 
 
+        } else {
+            showOutputMessage("No pain, No gain");
         }
-    } else {
-        showOutputMessage("Please Give Inputs");
     }
 })

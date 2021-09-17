@@ -51,7 +51,11 @@ btnCalculate.addEventListener("click", function calculate() {
 
 
         }
-    } else {
+    } else if (Number(numberOfStocks.value) > 0 && Number(currentStockPrice.value) > 0 && Number(initialStockPrice.value) > 0 && Number(currentStockPrice.value) === Number(initialStockPrice.value)) {
+        showOutputMessage("NO PROFIT & NO LOSS(Otherwise Please Give Valid Inputs)");
+    } else if (Number(numberOfStocks.value) === 0 && Number(currentStockPrice.value) > 0 && Number(initialStockPrice.value) > 0) {
         showOutputMessage("Please Give Valid Inputs");
+    } else {
+        showOutputMessage("Please Give Inputs");
     }
 })

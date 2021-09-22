@@ -27,18 +27,7 @@ btnCalculate.addEventListener("click", function calculate() {
     if (Number(numberOfStocks.value) > 0 && Number(currentStockPrice.value) > 0 && Number(initialStockPrice.value) > 0 && Number(currentStockPrice.value) != Number(initialStockPrice.value)) {
 
         if (Number(currentStockPrice.value) > Number(initialStockPrice.value)) {
-            var loss = currentCost - initialCost;
-            var lossPer = ((loss / initialCost) * 100).toFixed(2);
-            document.getElementById('loading').style.display = "block";
-            setTimeout(function() {
-                document.getElementById('loading').style.display = "none";
-                output.style.color = "red";
-                showOutputMessage("The loss is ₹ " + loss + ". The loss percentage is " + lossPer + "% 😔");
-                document.getElementById('loss').style.display = "block";
-            }, 5000)
-
-        } else if (Number(initialStockPrice.value) > Number(currentStockPrice.value)) {
-            var profit = initialCost - currentCost;
+            var profit = currentCost - initialCost;
             var profitPer = ((profit / initialCost) * 100).toFixed(2);
             document.getElementById('loading').style.display = "block";
             setTimeout(function() {
@@ -46,7 +35,20 @@ btnCalculate.addEventListener("click", function calculate() {
                 output.style.color = "green";
                 showOutputMessage("The profit is ₹ " + profit + ". The profit percentage is " + profitPer + "% 🤑🥳");
                 document.getElementById('profit').style.display = "block";
-            }, 5000)
+            }, 3000)
+
+        } else if (Number(initialStockPrice.value) > Number(currentStockPrice.value)) {
+            var loss = initialCost - currentCost;
+            var lossPer = ((loss / initialCost) * 100).toFixed(2);
+            document.getElementById('loading').style.display = "block";
+            setTimeout(function() {
+                document.getElementById('loading').style.display = "none";
+
+                output.style.color = "red";
+                showOutputMessage("The loss is ₹ " + loss + ". The loss percentage is " + lossPer + "% 😔");
+                document.getElementById('loss').style.display = "block";
+
+            }, 3000)
 
 
 
